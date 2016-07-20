@@ -204,7 +204,7 @@
             // 
             // picCounter6
             // 
-            this.picCounter6.Location = new System.Drawing.Point(483, 143);
+            this.picCounter6.Location = new System.Drawing.Point(381, 143);
             this.picCounter6.Name = "picCounter6";
             this.picCounter6.Size = new System.Drawing.Size(45, 100);
             this.picCounter6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -213,7 +213,7 @@
             // 
             // picCounter7
             // 
-            this.picCounter7.Location = new System.Drawing.Point(381, 143);
+            this.picCounter7.Location = new System.Drawing.Point(483, 143);
             this.picCounter7.Name = "picCounter7";
             this.picCounter7.Size = new System.Drawing.Size(45, 100);
             this.picCounter7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

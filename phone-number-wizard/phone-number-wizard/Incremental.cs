@@ -9,7 +9,7 @@ namespace phone_number_wizard
     public partial class frmIncrementalPhoneNumber : Form
     {
         long upper = 9999999999;
-        long lower = 0000000000;
+        long lower;
 
         long current = 5555555555;
 
