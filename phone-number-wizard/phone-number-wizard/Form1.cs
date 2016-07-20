@@ -75,6 +75,8 @@ namespace phone_number_wizard
             current = 5555555555;
             clicks = -1;
 
+            this.Size = new System.Drawing.Size(423, 170);
+
             lblPhoneNumber.Text = Regex.Replace(current.ToString(), @"(\d{3})(\d{3})(\d{4})", "$1-$2-$3");
             click();
         }
@@ -126,9 +128,20 @@ namespace phone_number_wizard
             picChangeArrow.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
-            textBox1.Text = Regex.Replace(textBox1.Text, @"(\d{3})(\d{3})(\d{4})", "$1-$2-$3");
+            picCounter1.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(0, 1) + ".gif");
+            picCounter2.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(1, 1) + ".gif");
+            picCounter3.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(2, 1) + ".gif");
+            picCounter4.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(4, 1) + ".gif");
+            picCounter5.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(5, 1) + ".gif");
+            picCounter6.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(6, 1) + ".gif");
+            picCounter7.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(8, 1) + ".gif");
+            picCounter8.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(9, 1) + ".gif");
+            picCounter9.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(10, 1) + ".gif");
+            picCounter10.Load("http://rule34.xxx/counter/" + lblPhoneNumber.Text.Substring(11, 1) + ".gif");
+            this.Width = 807;
+            this.Height = 308;
         }
     }
 }
